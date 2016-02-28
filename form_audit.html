@@ -1,0 +1,111 @@
+﻿<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Form</title>
+ </head>
+
+<style>
+   b.b01 { 
+    margin-right:90px; 
+}   
+   b.b02 { 
+    margin-right:65px; 
+}
+   b.b03 { 
+    margin-right:1px; 
+}
+</style>
+
+<body>  
+<form>
+<fieldset style="width: 40px">
+<b class="b01">Auditor:</b>
+<select name="name_auditor">
+    <option value="Rodrigo">Rodrigo Valdez</option>
+    <option value="Deandra" selected>Deandra Alfero</option>
+    <option value="Hugo">Hugo Pastor Corro</option>
+    <option value="Vito">Vito Antuofermo</option>
+    <option value="Alan">Alan Minter</option>
+    <option value="Denny">Denny Moyer</option>
+    <option value="Jermain">Jermain Taylor</option>
+    <option value="Bernard">Bernard Hopkins</option>
+    <option value="Marvin">Marvin Hagler</option>
+  </select>
+  
+<br><br>
+  <b class="b02">Audit Type:</b>  <input type="text" name="sometitle" value="Factory" size="28">
+  <br><br>
+  
+<b class="b03">Proposed Audit Date:</b>
+<select name="month">
+    <option value="January">January</option>
+    <option value="February">February</option>
+    <option value="March"selected>March</option>
+    <option value="April">April</option>
+    <option value="May">May</option>
+    <option value="June">June</option>
+    <option value="July">July</option>
+    <option value="August">August</option>
+    <option value="September">September</option>
+    <option value="October">October</option>
+    <option value="November">November</option>
+    <option value="December">December</option>
+</select>
+
+<select name="number">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18"selected>18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+    <option value="31">31</option>
+</select>
+
+<select name="year">
+    <option value="1">2015</option>
+    <option value="2"selected>2016</option>
+    <option value="3">2017</option>
+    <option value="4">2018</option>
+    <option value="5">2019</option>
+    <option value="6">2020</option>
+</select>
+
+<br><br>
+<b>Comments:</b>
+  <br>
+  <p><textarea name="message" rows="7" cols="48">This is comment - it should be editable</textarea>
+
+</fieldset>
+</form>
+
+ <p><input type="button" value="Request Audit"></p>
+ 
+ 
+</body>
+</html>
