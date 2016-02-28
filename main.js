@@ -1,65 +1,17 @@
-// Number
-var m = 1.618;
-var n = 4000;
+document.write('<ul><li><a href="http://newacropolis.org.ua/" target="_blank">Перейти на сайт</a></li><li>Список книг, которые хочется открыть за грядущие два месяца:<ol type="a"><li>Категория: Философия Истории:<ol><li>Арнольд Тойнби. Постижение истории.</li><li>Освальд Шпенглер. Закат Европы.</li><li>Питирим Сорокин. Человек. Цивилизация. Общество.</li><li>Карл Ясперс. Смысл и назначение истории.</li></ol></li><li>Категория: фантастика:<ol><li>Звездные войны 1</li><li>Звездные войны 2</li><li>Звездные войны 3</li><li>Звездные войны 4</li></ol></li></ol></li><li>Список книг, которые хочется открыть за грядущие два месяца:<ol type="a"><li>Категория: Философия Истории:<ol><li>Арнольд Тойнби. Постижение истории.</li><li>Освальд Шпенглер. Закат Европы.</li><li>Питирим Сорокин. Человек. Цивилизация. Общество.</li><li>Карл Ясперс. Смысл и назначение истории.</li></ol></li><li>Категория: фантастика:<ol><li>Звездные войны 1</li><li>Звездные войны 2</li><li>Звездные войны 3</li><li>Звездные войны 4</li></ol></li></ol></li></ul>');
 
-// Object
-var N = new Number(4000);
+timeend= new Date();
 
-console.log(typeof n);
-console.log(typeof N);
-console.log("---------------");
+timeend= new Date(timeend.getYear()>1900?(timeend.getYear()+1):(timeend.getYear()+1901),0,1);
 
-var person = {name: "Artem",
-				 age: 31,
-				 photo: function() {
-					 console.log("Very good Photo");
-				 }
-				 				 
-			 }
+function time() {
+    today = new Date();
+    today = Math.floor((timeend-today)/1000);
+       thour=today%60; today=Math.floor(today/3600);
+    timestr=today+" hours remains before the New Year ";
+    document.getElementById('t').innerHTML=timestr;
+    window.setTimeout("time()",1000);
+}
 
-var ArtemsName = person.name;
-console.log(ArtemsName);
-var ArtemsAge = person.age;
-console.log(ArtemsAge);
-person.photo();
-console.log("------------");
-
-var M = new Number(1.618);
-var m = 1.2345;
-console.log(m.toFixed(3));
-console.log(2 .toFixed(2));
-console.log("------------");
-console.log("------------");
-
-//console.log(n.toExponential(2));
-//console.log(m.toPrecision(3));
-
-var i = 10;
-console.log(++i);
-var j = i;
-console.log(j);
-console.log("------------");
-console.log("------------");
-
-console.log(9%2);
-
-n = n + 2;
-n +=2;
-n *=3;
-
-console.log(Math.sqrt(25));
-console.log(Math.PI);
-
-console.log(3.00e+400000);
-console.log(4/0);
-console.log(0/0);
-console.log(NaN===NaN);
-
-console.log(0.2 + 0.1);
-
-
-
-
-
-
+ 
 
